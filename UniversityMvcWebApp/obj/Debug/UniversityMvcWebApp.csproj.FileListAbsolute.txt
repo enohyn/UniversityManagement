@@ -1,0 +1,36 @@
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\UniversityMvcWebApp.dll.config
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\UniversityMvcWebApp.dll
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\UniversityMvcWebApp.pdb
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Helpers.dll
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Razor.dll
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.Deployment.dll
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.dll
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.Razor.dll
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Razor.xml
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.xml
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.Deployment.xml
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.Razor.xml
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Helpers.xml
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\obj\Debug\UniversityMvcWebApp.csprojResolveAssemblyReference.cache
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\obj\Debug\UniversityMvcWebApp.dll
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\obj\Debug\UniversityMvcWebApp.pdb
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Mvc.dll
+G:\Project\ASPDOTNET\NEW PROJECT\Bitm Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Mvc.xml
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\UniversityMvcWebApp.dll.config
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\UniversityMvcWebApp.dll
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\UniversityMvcWebApp.pdb
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Helpers.dll
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Mvc.dll
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Razor.dll
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.dll
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.Razor.dll
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Razor.xml
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.xml
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Webpages.Razor.xml
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Helpers.xml
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\bin\System.Web.Mvc.xml
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\obj\Debug\UniversityMvcWebApp.csprojResolveAssemblyReference.cache
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\obj\Debug\UniversityMvcWebApp.dll
+C:\Users\Workstation\Desktop\Update Project\UniversityMvcWebApp\UniversityMvcWebApp\obj\Debug\UniversityMvcWebApp.pdb

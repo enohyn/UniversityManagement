@@ -1,0 +1,260 @@
+﻿@model UniversityMvcWebApp.Models.ViewModel.RoomAllocationInfo
+@{
+    ViewBag.Title = "ViewClassSchedule";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Home | XU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/DesignComponent/adminTheme/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="~/Content/DesignComponent/adminTheme/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Graph CSS -->
+    <link href="~/Content/DesignComponent/adminTheme/css/lines.css" rel='stylesheet' type='text/css' />
+    <link href="~/Content/DesignComponent/adminTheme/css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="~/Content/DesignComponent/adminTheme/js/jquery.min.js"></script>
+    <!----webfonts--->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!-- Nav CSS -->
+    <link href="~/Content/DesignComponent/adminTheme/css/custom.css" rel="stylesheet">
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="~/Content/DesignComponent/adminTheme/js/metisMenu.min.js"></script>
+    <script src="~/Content/DesignComponent/adminTheme/js/custom.js"></script>
+    <!-- Graph JavaScript -->
+    <script src="~/Content/DesignComponent/adminTheme/js/d3.v3.js"></script>
+    <script src="~/Content/DesignComponent/adminTheme/js/rickshaw.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#DepartmentId").change(function () {
+
+                var departmentId = $("#DepartmentId").val();
+
+
+                var json = { deptId: departmentId };
+
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GetAllRoomInfoByDepartmentId", "ClassRoom")',
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(json),
+                    success: function (data) {
+
+                        $("#scheduleInfo").empty();
+
+
+                        $.each(data, function (key, value) {
+
+                            $("#scheduleInfo").append('<tr><td>' + value.CourseCode + '</td>   <td>' + value.CourseName + '</td>   <td>' + value.TotalSchedule + '</td> </tr>');
+
+                        });
+
+                    }
+                });
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Xoom University</a>
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="~/Content/DesignComponent/adminTheme/images/1.png"><span class="badge"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="m_2"><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                        <li class="m_2"><a href="#"><i class="fa fa-wrench"></i> Settings</a></li>
+                        <li class="m_2"><a href="#"><i class="fa fa-shield"></i> Lock Profile</a></li>
+                        <li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
+            </form>
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-home nav_icon"></i>Home</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tags nav_icon"></i>Department<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="Department.html"><i class="fa fa-floppy-o nav_icon"></i>Save Department</a>
+                                </li>
+                                <li>
+                                    <a href="DepartmentView.html"><i class="fa fa-eye nav_icon"></i>View Department</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-book nav_icon"></i>Course<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="Course.html"><i class="fa fa-floppy-o nav_icon"></i>Save Course</a>
+                                </li>
+                                <li>
+                                    <a href="ViewCourse.html"><i class="fa fa-eye nav_icon"></i>View Course Statics</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-briefcase nav_icon"></i>Teacher<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class="fa fa-floppy-o nav_icon"></i>Save Teacher</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-thumb-tack nav_icon"></i>Course Assign To Teacher</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-users nav_icon"></i>Student<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class="fa fa-floppy-o nav_icon"></i>Register Student</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-thumb-tack nav_icon"></i>Enroll Course To Student</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-gavel nav_icon"></i>Result<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class="fa fa-floppy-o nav_icon"></i>Save Result</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-eye nav_icon"></i>View Result</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-th-large nav_icon"></i>Classroom<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class="fa fa-thumb-tack nav_icon"></i>Allocate Classroom</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-eye nav_icon"></i>View Class Schedule</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-chain-broken nav_icon"></i>Reset<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class="fa fa-ban nav_icon"></i>Unassign Classroom</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-ban nav_icon"></i>Unallocate Classroom</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-user nav_icon"></i>Admin<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class="fa fa-user nav_icon"></i>Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-plus nav_icon"></i>Create Admin</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+            <div class="graphs">
+                <div class="xs">
+                    <div class="alert alert-danger" role="alert">
+                        <strong>View Course Statics!</strong>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="horizontal-form">
+                            @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "assignCourseForm", @class = "form-horizontal" }))
+                            {
+                                <div class="form-group">
+                                    @Html.LabelFor(x => x.DepartmentId, null, new { @class = "col-sm-2 control-label" })
+                                    <div class="col-sm-4">
+                                        @Html.DropDownListFor(x => x.DepartmentId, new SelectList(ViewBag.DepartmentList, "Value", "Text"), new { @class = "form-control1", id = "DepartmentId" })
+                                    </div>
+                                    <div class="col-sm-3">
+                                        @Html.ValidationMessageFor(x => x.DepartmentId, null, new { @class = "help-block" })
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+                        <div class="panel-body no-padding">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr class="warning">
+                                        <th>Course Code</th>
+                                        <th>Course Title</th>
+                                        <th>Scheduled Info</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="scheduleInfo"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+        <!-- Nav CSS -->
+        <link href="~/Content/DesignComponent/adminTheme/css/custom.css" rel="stylesheet">
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="~/Content/DesignComponent/adminTheme/js/metisMenu.min.js"></script>
+        <script src="~/Content/DesignComponent/adminTheme/js/custom.js"></script>
+        <script src="~/Content/DesignComponent/adminTheme/js/bootstrap.min.js"></script>
+    </div>
+</body>
+</html>
